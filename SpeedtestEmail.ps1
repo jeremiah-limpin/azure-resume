@@ -13,7 +13,7 @@ if (Test-Path $speedtestexe) {
 
 # Run Speedtest and output results
 & $speedtestexe --accept-license --accept-gdpr > $resultsFilePath
-
+ 
 # Get the public IP address
 $ip = Invoke-RestMethod -Uri "http://ifconfig.me/ip"
 
